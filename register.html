@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Task Manager</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-hero">
+      <div>
+        <h1>Get Started</h1>
+        <p>Create your account and start managing tasks with a clean, responsive dashboard.</p>
+      </div>
+    </div>
+    <div class="auth-panel">
+      <div class="auth-header">
+        <button type="button" class="icon-btn" data-theme-toggle data-theme-icon aria-label="Toggle theme"></button>
+      </div>
+      <div class="auth-form-wrap">
+        <div class="auth-form-box">
+          <h2>Create account</h2>
+          <p class="auth-subtitle">Already have an account? <a href="/login.html">Sign in</a></p>
+          <form id="registerForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="password">Password</label>
+              <input type="password" id="password" name="password" class="form-input" placeholder="Min 6 chars with a number" autocomplete="new-password" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" placeholder="Repeat password" autocomplete="new-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Create account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/toast.js"></script>
+  <script src="/js/loader.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/validation.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>
